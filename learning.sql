@@ -4,17 +4,18 @@ CREATE TABLE EMPLOYEES(
  last_name VARCHAR2(20),
  salary NUMBER (8,2),
  Date_of_hire DATE
+ BONUS NUMBER(6,2)
 );
 
-INSERT INTO EMPLOYEES (first_name,last_name,salary,date_of_hire)
-VALUES('yabes','iyukuri',550000.12,TO_DATE('2022-05-01', 'YYYY-MM-DD'));  
+INSERT INTO EMPLOYEES (first_name,last_name,salary,date_of_hire,BONUS )
+VALUES('yabes','iyukuri',550000.12,TO_DATE('2022-05-01', 'YYYY-MM-DD'),3000.12);  
 
 INSERT INTO EMPLOYEES (first_name,last_name,salary,date_of_hire)
-VALUES('audace','karenzi',330000.12,TO_DATE('2023-03-01', 'YYYY-MM-DD')); 
+VALUES('audace','karenzi',330000.12,TO_DATE('2023-03-01', 'YYYY-MM-DD'),2456.76); 
 
 
 INSERT INTO EMPLOYEES (first_name,last_name,salary,date_of_hire)
-VALUES('mucyo','moses',220000.12,TO_DATE('2024-02-01', 'YYYY-MM-DD')); 
+VALUES('mucyo','moses',220000.12,TO_DATE('2024-02-01', 'YYYY-MM-DD'),3456.57); 
 
 SELECT * FROM EMPLOYEES;
 
